@@ -796,9 +796,9 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-ite
      tbc: true       = the organizer hasn't announced dates yet; the dates below are our best guess.
      big: true       = a major show; gets a highlighted card.
      Dates are YYYY-MM-DD. A market disappears by itself the day after it ends. */
-  const SHOW_UNBOOKED=true;
+  const SHOW_UNBOOKED=false;
   const MARKETS=[
-    {"name": "Tinseltown Winter Market", "start": "2026-11-20", "end": "2026-11-22", "venue": "Bonnetts Energy Centre", "town": "Grande Prairie, AB", "area": "Grande Prairie", "hours": "", "status": "booked", "tbc": true, "url": "https://tinseltowngp.com/", "big": true},
+    {"name": "Tinseltown Winter Market", "start": "2026-11-20", "end": "2026-11-22", "venue": "Bonnetts Energy Centre", "town": "Grande Prairie, AB", "area": "Grande Prairie", "hours": "", "status": "booked", "tbc": false, "url": "https://tinseltowngp.com/", "big": true},
     {"name": "Peace Country Classic Agri-Show", "start": "2027-03-11", "end": "2027-03-13", "venue": "TARA Centre, Evergreen Park", "town": "Grande Prairie, AB", "area": "Grande Prairie", "hours": "", "status": "planned", "url": "https://www.evergreenpark.ca/agricultural-events/the-peace-country-classic-agri-show/"},
     {"name": "Fort St. John Trade Show", "start": "2027-04-09", "end": "2027-04-11", "venue": "Pomeroy Sport Centre", "town": "Fort St. John, BC", "area": "Dawson Creek & Fort St. John", "hours": "Fri 5–9 pm · Sat 10 am–8 pm · Sun 11 am–5 pm", "status": "planned", "url": "https://fortstjohntradeshow.com/"},
     {"name": "Dawson Creek Trade Show", "start": "2027-04-17", "end": "2027-04-18", "venue": "Ovintiv Events Centre", "town": "Dawson Creek, BC", "area": "Dawson Creek & Fort St. John", "hours": "", "status": "planned", "url": "https://www.dawsoncreekeventscentre.com/events/detail/dawson-creek-trade-show-save-the-date"},
