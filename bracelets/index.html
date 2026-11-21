@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Custom Bracelets &amp; Anklets · GTR Retail</title>
+<meta name="description" content="Custom gemstone and lava-bead bracelets and anklets from GTR Retail. Pick your stone, your size and a charm, and we'll make it for you.">
+<link rel="canonical" href="https://gtrretail.ca/bracelets/">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#FBF4F2">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GTR Retail">
+<meta property="og:title" content="Custom Bracelets &amp; Anklets · GTR Retail">
+<meta property="og:description" content="Gemstone and lava-bead bracelets and anklets, made to your size. Pick your stone and charm.">
+<meta property="og:url" content="https://gtrretail.ca/bracelets/">
+<meta property="og:image" content="https://gtrretail.ca/bracelets/img/berry-quartz.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&family=Great+Vibes&display=swap">
+<style>
+:root{
+  --white:#FFFDFB; --cream:#FBF4F2; --blush:#F7E4E6; --petal:#F0CDD3; --rose:#DDA3AE;
+  --rosegold:#C9988A; --deep:#A65F6E; --ink:#5B4549; --muted:#86696e; --line:#EBD3D6;
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --sans:"Jost",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --script:"Great Vibes",cursive;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 17px/1.6 var(--sans);
+  padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px)}
+img{max-width:100%;display:block}
+a{color:var(--deep)}
+.wrap{width:min(1080px,100% - 32px);margin-inline:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* top bar */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0}
+.top a.home{font:500 14px var(--sans);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--ink);display:inline-flex;gap:8px;align-items:center}
+.top a.home:hover{color:var(--deep)}
+.top .cta-sm{font:600 14px var(--sans);text-decoration:none;color:var(--white);background:var(--deep);padding:9px 16px;border-radius:999px}
+.top .cta-sm:hover{filter:brightness(1.08)}
+
+/* hero */
+.hero{position:relative;padding:28px 0 56px;text-align:center;
+  background:radial-gradient(ellipse at 50% 0%,var(--white) 0%,var(--cream) 55%,transparent 75%)}
+.medal{width:170px;height:170px;margin:0 auto 18px;border-radius:50%;background:radial-gradient(circle,var(--white) 0%,var(--blush) 100%);
+  display:grid;place-items:center;box-shadow:0 10px 40px rgba(166,95,110,.16),inset 0 0 0 1px var(--line)}
+.medal img{width:108px;height:auto}
+.eyebrow{font:500 13px var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--rosegold);margin:0 0 6px}
+h1{font:600 clamp(38px,8vw,64px)/1.05 var(--serif);margin:0 0 14px;color:var(--ink);letter-spacing:-.01em}
+h1 em{font-style:italic;color:var(--deep)}
+.lead{max-width:560px;margin:0 auto 24px;color:var(--muted);font-size:18px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 16px var(--sans);text-decoration:none;border-radius:999px;padding:13px 24px;
+  border:1.5px solid var(--rose);color:var(--ink);background:var(--white);cursor:pointer;transition:transform .15s,filter .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:linear-gradient(100deg,var(--rose),var(--deep));border-color:transparent;color:var(--white);box-shadow:0 8px 24px rgba(166,95,110,.28)}
+.btn.primary:hover{filter:brightness(1.06)}
+.btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+@media (prefers-reduced-motion: reduce){.btn{transition:none}.btn:hover{transform:none}}
+.chips{display:flex;flex-wrap:wrap;gap:8px 10px;justify-content:center;margin:26px auto 0;padding:0;list-style:none;max-width:640px}
+.chips li{font:500 13.5px var(--sans);color:var(--ink);background:var(--white);border:1px solid var(--line);padding:6px 14px;border-radius:999px}
+.beads{display:flex;gap:7px;justify-content:center;margin:22px 0 0}
+.beads i{width:11px;height:11px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff 0%,var(--c) 60%)}
+
+/* sections */
+section.block{padding:56px 0;border-top:1px solid var(--line)}
+section.block.alt{background:var(--white)}
+h2{font:600 clamp(30px,5.5vw,44px)/1.1 var(--serif);margin:0 0 8px;text-align:center}
+h2 .script{font:400 1.15em var(--script);color:var(--deep);font-weight:400}
+.sub{max-width:600px;margin:0 auto 32px;text-align:center;color:var(--muted)}
+
+/* how it works */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:0;padding:0;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;background:var(--white);border:1px solid var(--line);border-radius:18px;padding:20px 18px}
+.alt .steps li{background:var(--cream)}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;margin-bottom:10px;
+  font:600 18px var(--serif);color:var(--white);background:linear-gradient(135deg,var(--rose),var(--deep))}
+.steps b{display:block;font:600 21px var(--serif);margin-bottom:2px}
+.steps span{color:var(--muted);font-size:15.5px}
+
+/* stones */
+.stones{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
+.stone{background:var(--white);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column}
+.alt .stone{background:var(--cream)}
+.stone img{aspect-ratio:4/5;object-fit:cover;width:100%;height:auto;background:var(--blush)}
+.stone .body{padding:16px 18px 18px}
+.stone h3{font:600 25px/1.15 var(--serif);margin:0 0 4px}
+.stone p{margin:0;color:var(--muted);font-size:15.5px}
+.stone .pick{margin-top:12px;font:600 14px var(--sans);background:none;border:0;padding:0;color:var(--deep);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.stone.more{justify-content:center;align-items:center;text-align:center;padding:28px 22px;background:linear-gradient(160deg,var(--blush),var(--white));border-style:dashed;border-color:var(--rose)}
+.stone.more .g{font:400 64px/1 var(--script);color:var(--rose)}
+.fine{max-width:680px;margin:22px auto 0;text-align:center;font-size:14px;color:var(--muted)}
+
+/* builder */
+.builder{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:start}
+form.card,.msg-card{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:22px}
+.alt form.card,.alt .msg-card{background:var(--cream)}
+fieldset{border:0;margin:0 0 18px;padding:0}
+legend,label.l{display:block;font:600 13px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--rosegold);margin-bottom:8px}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg label{position:relative}
+.seg input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.seg span{display:inline-block;padding:9px 16px;border-radius:999px;border:1.5px solid var(--line);background:var(--white);font:500 15px var(--sans);cursor:pointer}
+.seg input:checked + span{border-color:var(--deep);background:var(--blush);color:var(--ink);box-shadow:inset 0 0 0 1px var(--deep)}
+.seg input:focus-visible + span{outline:2px solid var(--deep);outline-offset:2px}
+select,input[type=text],textarea{width:100%;font:400 16px var(--sans);color:var(--ink);background:var(--white);border:1.5px solid var(--line);border-radius:12px;padding:11px 12px}
+select:focus,input:focus,textarea:focus{outline:2px solid var(--rose);outline-offset:1px;border-color:var(--rose)}
+textarea{min-height:84px;resize:vertical}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.hint{font-size:13.5px;color:var(--muted);margin:6px 0 0}
+.msg-card{position:sticky;top:16px}
+.msg-card h3{font:600 24px var(--serif);margin:0 0 10px}
+.msg{white-space:pre-wrap;font:400 15.5px/1.55 var(--sans);background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:14px;margin:0 0 14px;min-height:150px}
+.alt .msg{background:var(--white)}
+.msg-actions{display:flex;flex-wrap:wrap;gap:10px}
+.msg-actions .btn{flex:1 1 160px}
+.ok{color:var(--deep);font-weight:600;font-size:14.5px;margin:10px 0 0}
+
+/* measure tip */
+.tip{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;max-width:760px;margin:0 auto;background:var(--white);border:1px solid var(--line);border-radius:20px;padding:20px 22px}
+.tip svg{width:64px;height:64px;color:var(--deep)}
+.tip p{margin:0;color:var(--muted)}
+.tip b{color:var(--ink)}
+
+footer{background:var(--ink);color:var(--blush);padding:34px 0 40px;font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center}
+footer a{color:var(--white)}
+footer .script{font:400 30px var(--script);color:var(--petal)}
+
+@media (max-width:860px){
+  .steps{grid-template-columns:1fr 1fr}
+  .builder{grid-template-columns:1fr}
+  .msg-card{position:static}
+}
+@media (max-width:480px){
+  .steps{grid-template-columns:1fr}
+  .row2{grid-template-columns:1fr}
+  .tip{grid-template-columns:1fr;text-align:center}
+  .tip svg{margin:0 auto}
+  .top .cta-sm{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="wrap top">
+  <a class="home" href="/"><span aria-hidden="true">&larr;</span> GTR Retail</a>
+  <a class="cta-sm" href="#design">Design yours</a>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="medal"><img src="img/gtr-pink-logo.webp" alt="GTR Retail" width="400" height="440"></div>
+    <p class="eyebrow">GTR Retail · Hand-strung</p>
+    <h1>Custom bracelets <em>&amp;</em> anklets</h1>
+    <p class="lead">Gemstone and lava-bead pieces, made to your size. Pick your stone, add a charm if you like, and we'll string it for you.</p>
+    <div class="btns">
+      <a class="btn primary" href="#design">Design yours</a>
+      <a class="btn" href="#stones">See the stones</a>
+    </div>
+    <ul class="chips" aria-label="About our bracelets">
+      <li>Sourced from Canadian suppliers</li>
+      <li>Thousands of variations</li>
+      <li>Custom stone work possible</li>
+      <li>Supporting local matters to us</li>
+    </ul>
+    <div class="beads" aria-hidden="true"><i style="--c:var(--petal)"></i><i style="--c:#fff"></i><i style="--c:var(--rose)"></i><i style="--c:var(--ink)"></i><i style="--c:var(--rose)"></i><i style="--c:#fff"></i><i style="--c:var(--petal)"></i></div>
+  </div>
+</header>
+
+<section class="block alt" id="how">
+  <div class="wrap">
+    <h2>How it <span class="script">works</span></h2>
+    <p class="sub">Four quick choices. We'll text you back to confirm the details before we make it.</p>
+    <ol class="steps">
+      <li><b>Bracelet or anklet</b><span>Wrist or ankle, for you or as a gift.</span></li>
+      <li><b>Pick your stone</b><span>Choose from the stones below, or ask for something special.</span></li>
+      <li><b>Your size</b><span>Measure your wrist or ankle. Not sure? We'll help.</span></li>
+      <li><b>Add a charm</b><span>Optional. Ask us what's in stock.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="block" id="stones">
+  <div class="wrap">
+    <h2>Our <span class="script">stones</span></h2>
+    <p class="sub">Each stone carries its own traditional meaning. Every bead is a little different, so no two bracelets are exactly alike.</p>
+    <div class="stones" id="stone-grid"></div>
+    <p class="fine">Stone meanings are traditional folklore, shared for fun. Lava beads are porous: add a drop of your favourite essential oil for scent.</p>
+  </div>
+</section>
+
+<section class="block alt" id="design">
+  <div class="wrap">
+    <h2>Design <span class="script">yours</span></h2>
+    <p class="sub">Make your picks and we'll write the message for you. Send it by text and we'll get back to you with the price and timing.</p>
+    <div class="builder">
+      <form class="card" id="bform" autocomplete="on">
+        <fieldset>
+          <legend>I'd like a</legend>
+          <div class="seg" id="b-type">
+            <label><input type="radio" name="type" value="Bracelet" checked><span>Bracelet</span></label>
+            <label><input type="radio" name="type" value="Anklet"><span>Anklet</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <label class="l" for="b-stone">Stone</label>
+          <select id="b-stone"></select>
+          <input type="text" id="b-stone-other" placeholder="Tell us the stone or colour you'd like" hidden style="margin-top:8px">
+        </fieldset>
+        <div class="row2">
+          <fieldset>
+            <label class="l" for="b-size" id="b-size-l">Wrist size</label>
+            <select id="b-size"></select>
+          </fieldset>
+          <fieldset>
+            <label class="l" for="b-charm">Charm</label>
+            <select id="b-charm"></select>
+          </fieldset>
+        </div>
+        <fieldset>
+          <legend>Lava beads</legend>
+          <div class="seg">
+            <label><input type="radio" name="lava" value="Yes, add lava beads" checked><span>Yes, add them</span></label>
+            <label><input type="radio" name="lava" value="No lava beads"><span>No thanks</span></label>
+          </div>
+        </fieldset>
+        <div class="row2">
+          <fieldset>
+            <label class="l" for="b-qty">How many</label>
+            <select id="b-qty"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option value="6+">6 or more</option></select>
+          </fieldset>
+          <fieldset>
+            <label class="l" for="b-name">Your name</label>
+            <input type="text" id="b-name" autocomplete="given-name" placeholder="First name">
+          </fieldset>
+        </div>
+        <fieldset style="margin-bottom:0">
+          <label class="l" for="b-notes">Anything else?</label>
+          <textarea id="b-notes" placeholder="A gift, a colour mix, a date you need it by..."></textarea>
+        </fieldset>
+      </form>
+
+      <div class="msg-card" aria-live="polite">
+        <h3>Your message</h3>
+        <p class="msg" id="b-msg"></p>
+        <div class="msg-actions">
+          <a class="btn primary" id="b-text" href="sms:+15872020224">Text it to us</a>
+          <button class="btn" type="button" id="b-copy">Copy message</button>
+        </div>
+        <p class="ok" id="b-ok" hidden>Copied. Paste it in a text to 587-202-0224 or a Facebook message.</p>
+        <p class="hint">Texts go to GTR Retail at 587-202-0224. Prefer email? <a id="b-mail" href="mailto:GTR_Retail@outlook.com">GTR_Retail@outlook.com</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="measure">
+  <div class="wrap">
+    <h2>Finding your <span class="script">size</span></h2>
+    <div class="tip" style="margin-top:22px">
+      <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><ellipse cx="32" cy="32" rx="22" ry="15"/><path d="M10 32h44"/><path d="M18 28v8M26 28v8M34 28v8M42 28v8M50 30v4"/></svg>
+      <p><b>Wrap a soft tape or a piece of string</b> around your wrist (or ankle) where you'd wear it, then measure the string. Tell us that number and we'll size it for a comfy fit. Not sure? Pick "Help me size it" and we'll walk you through it.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="script">GTR Retail</span>
+    <span>Questions? Text <a href="sms:+15872020224">587-202-0224</a> · <a href="mailto:GTR_Retail@outlook.com">GTR_Retail@outlook.com</a></span>
+    <span><a href="/">Back to gtrretail.ca</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* ============ OPTIONS (for Jen to fill in) ============
+     STONES: one line per stone. photo = file in /bracelets/img/ (leave "" for no photo yet).
+             meaning = the traditional meaning from the bracelet card. No health claims.
+     SIZES:  wrist/ankle sizes Jen offers. Placeholder list until Jen confirms her sizes.
+     CHARMS: charm options. Placeholder until Jen sends what she has.
+     No prices on the page yet (Tanner/Jen to decide). */
+  const STONES = [
+    {name:"Berry Quartz",    meaning:"Traditionally a stone of love, joy and creativity.",     photo:"img/berry-quartz.webp"},
+    {name:"Blue Aventurine", meaning:"Traditionally a stone of wisdom, clarity and confidence.", photo:"img/blue-aventurine.webp"},
+    {name:"Gray Sardonyx",   meaning:"Traditionally a stone of protection, strength and grounding.", photo:"img/gray-sardonyx.webp"}
+    // JEN: add more stones here, e.g. {name:"Rose Quartz", meaning:"Traditionally a stone of ...", photo:""},
+  ];
+  const SIZES = {
+    // JEN: replace with the sizes you make. These are placeholders.
+    //       e.g. "Small (6 in / 15 cm)". Until then customers give a measurement or ask for help.
+    Bracelet: ["Help me size it", "I'll put my measurement in the notes"],
+    Anklet:   ["Help me size it", "I'll put my measurement in the notes"]
+  };
+  const CHARMS = ["No charm", "Yes, please. What charms do you have?"]; // JEN: list your charms here, e.g. "Heart (silver)"
+  const PHONE = "+15872020224";
+
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+  /* stone cards */
+  $("stone-grid").innerHTML = STONES.map((s,i) => `
+    <article class="stone">
+      ${s.photo ? `<img src="${esc(s.photo)}" alt="${esc(s.name)} bracelet with lava beads" width="720" height="960" loading="lazy">` : ""}
+      <div class="body"><h3>${esc(s.name)}</h3><p>${esc(s.meaning)}</p>
+      <button type="button" class="pick" data-i="${i}">Choose ${esc(s.name)}</button></div>
+    </article>`).join("") + `
+    <article class="stone more">
+      <div class="g" aria-hidden="true">G</div>
+      <h3>More stones coming</h3>
+      <p>Looking for a certain stone or colour? Custom stone work is possible. Just ask.</p>
+      <button type="button" class="pick" data-i="other">Ask for a different stone</button>
+    </article>`;
+
+  /* builder */
+  const stoneSel = $("b-stone");
+  stoneSel.innerHTML = STONES.map(s => `<option>${esc(s.name)}</option>`).join("") + `<option value="__other">Something else</option><option value="__help">Not sure, help me choose</option>`;
+  $("b-charm").innerHTML = CHARMS.map(c => `<option>${esc(c)}</option>`).join("");
+  const type = () => document.querySelector('input[name=type]:checked').value;
+  const lava = () => document.querySelector('input[name=lava]:checked').value;
+  function fillSizes(){
+    const keep = $("b-size").value;
+    $("b-size").innerHTML = SIZES[type()].map(s => `<option>${esc(s)}</option>`).join("");
+    if (SIZES[type()].includes(keep)) $("b-size").value = keep;
+    $("b-size-l").textContent = type() === "Anklet" ? "Ankle size" : "Wrist size";
+  }
+  function stoneText(){
+    const v = stoneSel.value;
+    if (v === "__other") return $("b-stone-other").value.trim() || "Something else (I'll describe it)";
+    if (v === "__help") return "Not sure yet, please help me choose";
+    return v;
+  }
+  function build(){
+    $("b-stone-other").hidden = stoneSel.value !== "__other";
+    const q = $("b-qty").value, n = $("b-name").value.trim(), notes = $("b-notes").value.trim();
+    const lines = [
+      `Hi GTR Retail! I'd like ${q === "1" ? "a custom " + type().toLowerCase() : q + " custom " + type().toLowerCase() + "s"}.`, "",
+      "Stone: " + stoneText(),
+      (type() === "Anklet" ? "Ankle size: " : "Wrist size: ") + $("b-size").value,
+      "Charm: " + $("b-charm").value,
+      "Lava beads: " + lava()
+    ];
+    if (notes) lines.push("Notes: " + notes);
+    if (n) lines.push("", "Thanks, " + n);
+    const text = lines.join("\n");
+    $("b-msg").textContent = text;
+    $("b-text").href = "sms:" + PHONE + "?&body=" + encodeURIComponent(text);
+    $("b-mail").href = "mailto:GTR_Retail@outlook.com?subject=" + encodeURIComponent("Custom " + type().toLowerCase()) + "&body=" + encodeURIComponent(text);
+    $("b-ok").hidden = true;
+  }
+  document.querySelectorAll('input[name=type]').forEach(r => r.addEventListener("change", () => { fillSizes(); build(); }));
+  ["b-stone","b-stone-other","b-size","b-charm","b-qty","b-name","b-notes"].forEach(id => { $(id).addEventListener("input", build); $(id).addEventListener("change", build); });
+  document.querySelectorAll('input[name=lava]').forEach(r => r.addEventListener("change", build));
+  $("bform").addEventListener("submit", e => e.preventDefault());
+  $("stone-grid").addEventListener("click", e => {
+    const b = e.target.closest(".pick"); if (!b) return;
+    stoneSel.value = b.dataset.i === "other" ? "__other" : STONES[+b.dataset.i].name;
+    build();
+    $("design").scrollIntoView();
+    (b.dataset.i === "other" ? $("b-stone-other") : stoneSel).focus({preventScroll:true});
+  });
+  $("b-copy").addEventListener("click", async () => {
+    const text = $("b-msg").textContent;
+    try { await navigator.clipboard.writeText(text); $("b-ok").textContent = "Copied. Paste it in a text to 587-202-0224 or a Facebook message."; }
+    catch (e) { const r = document.createRange(); r.selectNodeContents($("b-msg")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); $("b-ok").textContent = "Selected. Copy it with your device's copy command."; }
+    $("b-ok").hidden = false;
+  });
+  fillSizes(); build();
+})();
+</script>
+</body>
+</html>
