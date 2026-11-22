@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Name;Owner;;;
+FN:Owner Name
+ORG:ICING
+TITLE:Owner
+TEL;TYPE=CELL,VOICE,TEXT:+10000000000
+EMAIL;TYPE=INTERNET,WORK:hello@example.com
+URL:https://gtrretail.ca/icing/
+ADR;TYPE=WORK:;;;Grande Prairie;AB;;Canada
+NOTE:ICING: forever jewelry welded on at our booth\, plus charms\, rings\, hats and tees. The cutest commitment you can make.
+END:VCARD
