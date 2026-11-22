@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<!--
+  BOOTH KIT page: DRAFT. Not linked from the site, hidden from search (noindex).
+  Before launch:
+    1. Replace the two PHOTO placeholders with real photos of the first client's booth (written OK from the client first).
+    2. Replace the REVIEW placeholder with the client's real words and name (written OK first). Never invent a review.
+    3. Confirm the prices and timeline still match references/pricing.md in the Booth Kit skill.
+    4. Remove the draft banner and the noindex line, then link this page from the homepage "For vendors" section.
+-->
+<meta name="robots" content="noindex">
+<title>Booth Kit · Custom Booth Displays · GTR Retail</title>
+<meta name="description" content="Custom 3D-printed booth displays and digital business cards for market vendors in the Peace Region. Built by a vendor, for vendors.">
+<link rel="canonical" href="https://gtrretail.ca/booth-kit/">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0b0f12">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GTR Retail">
+<meta property="og:title" content="Booth Kit · Custom Booth Displays · GTR Retail">
+<meta property="og:description" content="Displays built around your stock and your brand. Built by a vendor, for vendors.">
+<meta property="og:url" content="https://gtrretail.ca/booth-kit/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+:root{
+  --bg:#0b0f12; --surface:#12191e; --raise:#18222a; --line:#26333b;
+  --fg:#eef6f7; --muted:#9fb2ba; --accent:#3fe3d6;
+  --grad:linear-gradient(100deg,#17ead9 0%,#1ec5db 38%,#2991de 72%,#3a6fe0 100%);
+  --display:"Unbounded","Arial Black",system-ui,sans-serif;
+  --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 17px/1.6 var(--body);
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--accent)}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.draft{background:#f5c518;color:#1a1400;font:600 14px/1.4 var(--body);text-align:center;padding:8px 16px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:16px}
+.top a.home{font:700 15px var(--body);color:var(--fg);text-decoration:none}
+.btn{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;font:700 15.5px var(--body);text-decoration:none;border-radius:999px;padding:12px 20px;border:1.5px solid var(--line);color:var(--fg);background:transparent}
+.btn.primary{background:var(--grad);border-color:transparent;color:#0b0f12}
+.btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:var(--display);font-size:clamp(34px,6vw,60px);line-height:1.05;margin:12px 0 0;letter-spacing:-.01em;text-wrap:balance}
+h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font-family:var(--display);font-size:clamp(24px,3.6vw,34px);line-height:1.15;margin:10px 0 0;text-wrap:balance}
+h3{font-size:18px;margin:0}
+p{margin:12px 0 0;max-width:62ch}
+.lead{font-size:clamp(17px,1.8vw,20px);color:var(--muted)}
+section{padding-block:64px;border-top:1px solid var(--line)}
+.hero{padding-block:40px 56px;border-top:0;background:radial-gradient(60% 50% at 20% 0%,rgba(23,234,217,.14),transparent 70%),radial-gradient(50% 50% at 100% 100%,rgba(58,111,224,.16),transparent 70%)}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.ph{display:grid;place-items:center;text-align:center;min-height:260px;border:2px dashed #5a6b74;border-radius:18px;color:var(--muted);font:500 14px/1.5 var(--mono);padding:20px;margin-top:32px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:28px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;min-width:0}
+.card p{color:var(--muted);font-size:15.5px;margin-top:8px}
+.card .tag{display:inline-block;margin-top:12px;font:500 11.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:3px 9px}
+.card .tag.on{color:var(--accent);border-color:rgba(63,227,214,.4)}
+.renders{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:28px}
+.renders figure{margin:0;background:#f8f8f8;border-radius:14px;padding:12px;min-width:0}
+.renders figcaption{color:#3b4a52;font-size:13px;margin-top:6px;text-align:center}
+ol.steps{list-style:none;counter-reset:s;margin:28px 0 0;padding:0;display:grid;gap:12px}
+ol.steps li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+ol.steps li::before{content:counter(s);font:800 24px var(--display);background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+ol.steps b{display:block}
+ol.steps span{color:var(--muted);font-size:15.5px}
+.why{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 28px;margin-top:24px}
+.why div{border-left:3px solid var(--accent);padding:4px 0 4px 14px;color:var(--muted);font-size:15.5px}
+.why b{color:var(--fg);display:block}
+.prices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:28px}
+.prices .card strong{display:block;font:800 30px var(--display);background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;margin-top:6px}
+.promise{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px}
+.fine{color:var(--muted);font-size:14px}
+.end{text-align:center}
+.end .cta{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:22px}
+.end p{margin-inline:auto}
+footer{border-top:1px solid var(--line);padding-block:24px;color:var(--muted);font-size:13px;text-align:center}
+footer a{color:var(--muted)}
+@media (max-width:760px){.grid3,.prices,.renders{grid-template-columns:1fr}.renders{grid-template-columns:repeat(3,minmax(0,1fr))}.why,.promise{grid-template-columns:1fr}}
+@media (max-width:480px){.renders{grid-template-columns:1fr 1fr}.renders figure:last-child{grid-column:1/-1}}
+</style>
+</head>
+<body>
+<div class="draft" role="note">Draft page: not linked from the site. Photo and review slots are placeholders.</div>
+<div class="wrap top">
+  <a class="home" href="/">&larr; GTR Retail</a>
+  <a class="btn" href="sms:+15872020224">Text us</a>
+</div>
+
+<main>
+<section class="hero"><div class="wrap">
+  <div class="eyebrow">Booth Kit &middot; for market vendors</div>
+  <h1>A booth built around <em>your stock</em> and <em>your brand</em>.</h1>
+  <p class="lead">Custom 3D-printed displays and a scan-to-save digital business card, designed for how you actually sell. Built by a vendor, for vendors: we set up at the same markets you do.</p>
+  <div class="cta">
+    <a class="btn primary" href="sms:+15872020224">Text us about your booth</a>
+    <a class="btn" href="#how">How it works</a>
+  </div>
+  <div class="ph" role="img" aria-label="Placeholder for a client booth photo">PHOTO PLACEHOLDER<br>First client's booth with the displays set up.<br>Add only with the client's written OK.</div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow">The problem</div>
+  <h2>A busy booth runs on small steps.</h2>
+  <p class="lead">Find the item, find its stock, measure, ring it up, put everything back. Off-the-shelf racks work, but they're one size, generic, and they make you do those steps over and over. We design displays that cut steps, travel well and look like your brand.</p>
+  <div class="why">
+    <div><b>Sized to your stock</b>Built for how many styles you carry, with room to grow in modules.</div>
+    <div><b>Faster at the table</b>Display, storage and dispensing in one piece where it makes sense.</div>
+    <div><b>Made to travel</b>Panels that fit your vehicle, and parts that stay put when you carry them.</div>
+    <div><b>Tough enough for market season</b>Printed in PETG, which holds up in a hot vehicle where standard PLA can warp.</div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow">What we build</div>
+  <h2>Displays for what you sell.</h2>
+  <div class="grid3">
+    <article class="card"><h3>Chain card walls</h3><p>For permanent jewelry: every chain on its own numbered card with a reel behind it. Pull, weld, rewind, hang it back.</p><span class="tag on">In testing</span></article>
+    <article class="card"><h3>Charm bars</h3><p>Notched ledges that hold dozens of charms where customers can see them, in your colours.</p><span class="tag on">Designed</span></article>
+    <article class="card"><h3>Anklet, ring and earring stands</h3><p>Matching stands so the whole booth reads as one set.</p><span class="tag">Ask us</span></article>
+    <article class="card"><h3>Hat and tee displays</h3><p>Risers and racks for apparel that fold down for the drive home.</p><span class="tag">Ask us</span></article>
+    <article class="card"><h3>Price menu and QR signs</h3><p>Prices on a card you can swap, not printed in plastic. QR codes we test before they're printed.</p><span class="tag">Ask us</span></article>
+    <article class="card"><h3>Digital business card</h3><p>Customers scan once and save your contact, socials and booking link. <a href="/card/">See ours</a>.</p><span class="tag on">Available now</span></article>
+  </div>
+  <div class="renders">
+    <figure><img src="img/card_front.webp" alt="Chain card front: numbered tab, chain hanging down a centre groove, inch scale on the edge" width="900" height="900" loading="lazy"><figcaption>Chain card, front</figcaption></figure>
+    <figure><img src="img/card_back.webp" alt="Chain card back: reel under a thumb knob and a curved channel to the exit hole" width="900" height="900" loading="lazy"><figcaption>Reel behind every card</figcaption></figure>
+    <figure><img src="img/card_exploded.webp" alt="Chain card parts: card body, friction washer and reel" width="900" height="900" loading="lazy"><figcaption>Card, washer and reel</figcaption></figure>
+  </div>
+  <p class="fine">Design renders. Final parts are confirmed on a prototype.</p>
+</div></section>
+
+<section id="how"><div class="wrap">
+  <div class="eyebrow">How it works</div>
+  <h2>Prototype first. No guessing.</h2>
+  <ol class="steps">
+    <li><div><b>Tell us about your booth</b><span>What you sell, how many styles, your table and your vehicle. Photos help.</span></div></li>
+    <li><div><b>We design it</b><span>Renders in your colours and a clear quote before anything is printed.</span></div></li>
+    <li><div><b>Try a prototype</b><span>A small test piece loaded with your own stock, so you know it works before you commit. The prototype cost comes off your order.</span></div></li>
+    <li><div><b>We build the full set</b><span>Usually 2 to 3 weeks after you approve the prototype.</span></div></li>
+    <li><div><b>Set up and sell</b><span>Delivered ready for your next market, and covered by our 6-month guarantee.</span></div></li>
+  </ol>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow">Pricing</div>
+  <h2>Clear prices, quoted to your booth.</h2>
+  <div class="prices">
+    <div class="card"><h3>Prototype</h3><strong>$75</strong><p>Credited toward your display order.</p></div>
+    <div class="card"><h3>Digital business card</h3><strong>from $149</strong><p>First year of hosting included. $99 with any display.</p></div>
+    <div class="card"><h3>Displays</h3><strong>Quoted</strong><p>Priced to your stock count and the pieces you choose.</p></div>
+  </div>
+  <div class="promise">
+    <div class="card"><h3>6-month guarantee</h3><p>Any printed card, reel or rail that cracks or breaks in normal use within 6 months is reprinted free.</p></div>
+    <div class="card"><h3>Local and on hand</h3><p>We're at the same markets. If something needs a tweak, you know where to find us.</p></div>
+  </div>
+  <p class="fine">Prices in CAD, plus GST.</p>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow">From our first client</div>
+  <div class="ph" style="min-height:160px" role="img" aria-label="Placeholder for a client review">REVIEW PLACEHOLDER<br>The client's own words and name, with their written OK.<br>Do not publish this page until this is real.</div>
+</div></section>
+
+<section class="end"><div class="wrap">
+  <h2>Let's build your booth.</h2>
+  <p class="lead">Text us a photo of your table and what you sell. We'll tell you what we'd build and what it costs.</p>
+  <div class="cta">
+    <a class="btn primary" href="sms:+15872020224">Text 587-202-0224</a>
+    <a class="btn" href="/#request">Send a request</a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">GTR (Good Time Retail) Inc. &middot; Grande Prairie, AB &middot; <a href="tel:+15872020224">587-202-0224</a> &middot; <a href="/">gtrretail.ca</a></div></footer>
+</body>
+</html>
